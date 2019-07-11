@@ -5,7 +5,7 @@ bumblebee-command-line() {
     if [[ $BUFFER == optirun\ * ]]; then
         LBUFFER="${LBUFFER#optirun }"
     else
-        LBUFFER="optirun $LBUFFER"
+        LBUFFER="optirun -b primus $LBUFFER"
     fi
 }
 
